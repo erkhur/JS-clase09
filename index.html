@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI primer script</title>
+</head>
+<body>
+    <h1>Bienvenido a mi primera interacción JS - Clase 09</h1>
+    <p id="demo">Este es un párrafo que será modificado por JavaScript.</p>
+    
+    <script> src="script.js" 
+let nombre = prompt("¿Cuál es tu nombre?");
+let edad = prompt("¿Cuál es tu edad?");
+let ciudad = prompt("¿En qué ciudad vives?");
+
+alert(`Hola ${nombre}, tienes ${edad} años. y vives ${ciudad}`);
+console.log(`Hola ${nombre}, tienes ${edad} años.y vives ${ciudad}`);
+
+if (edad >= 18) {
+    alert("Eres mayor de edad.🙋");
+} else {
+    alert("Eres menor de edad.👶");
+}
+prompt("¿Cuál es tu color favorito?");
+function cambiarTexto() {
+    document.getElementById("demo").innerHTML = "¡El texto ha sido cambiado!";
+    console.log("El texto ha sido cambiado");
+    alert("El texto ha sido cambiado");
+}
+    </script>
+
+</body>
+</html>
